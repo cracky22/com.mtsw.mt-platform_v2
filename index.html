@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medientutoren Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="mainNav" style="display: none;">
+        <div class="container">
+            <a class="navbar-brand" href="#dashboard">
+                <i class="fas fa-graduation-cap me-2"></i>
+                Medientutoren Portal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dashboard" data-page="dashboard">
+                            <i class="fas fa-home me-1"></i>Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#guides" data-page="guides">
+                            <i class="fas fa-book me-1"></i>Anleitungen
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#todos" data-page="todos">
+                            <i class="fas fa-tasks me-1"></i>To-Do Liste
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rooms" data-page="rooms">
+                            <i class="fas fa-door-open me-1"></i>Raum-Check
+                        </a>
+                    </li>
+                    <li class="nav-item admin-only" style="display: none;">
+                        <a class="nav-link" href="#users" data-page="users">
+                            <i class="fas fa-users me-1"></i>Benutzer
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-user me-1"></i>
+                            <span id="userDisplayName"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#profile"><i class="fas fa-user-edit me-2"></i>Profil</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#" onclick="logout()"><i class="fas fa-sign-out-alt me-2"></i>Abmelden</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Form -->
+    <div id="loginContainer" class="container-fluid vh-100 d-flex align-items-center justify-content-center bg-light">
+        <div class="row w-100">
+            <div class="col-md-4 mx-auto">
+                <div class="card shadow">
+                    <div class="card-body p-5">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
+                            <h2 class="card-title">Medientutoren Portal</h2>
+                            <p class="text-muted">Bitte melden Sie sich an</p>
+                        </div>
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Benutzername</label>
+                                <input type="text" class="form-control" id="username" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Passwort</label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="fas fa-sign-in-alt me-2"></i>Anmelden
+                            </button>
+                        </form>
+                        <div id="loginError" class="alert alert-danger mt-3" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="container-fluid" style="display: none; margin-top: 80px;">
+        <div id="pageContent"></div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="d-flex justify-content-center align-items-center position-fixed w-100 h-100" style="top: 0; left: 0; background: rgba(255,255,255,0.8); z-index: 9999; display: none !important;">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Laden...</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/pages.js"></script>
+</body>
+</html>
