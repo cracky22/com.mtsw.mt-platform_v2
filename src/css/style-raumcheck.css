@@ -1,0 +1,53 @@
+a.backBtn {
+    text-decoration: none;
+    color: white;
+}
+
+a.backBtn:hover {
+    text-decoration: underline;
+}
+a.logout {
+    text-decoration: none;
+}
+
+a.logout:hover {
+    color: white;
+    font-size: 150%;
+}
+a.logout {
+    text-decoration: none;
+}
+
+a.logout:hover {
+    color: white;
+    font-size: 150%;
+    transition: 1.3s;
+}
+
+/*message*/
+div.msg {
+        display: flex;
+        justify-content: right;
+        padding-right: 20px;
+}
+.alert {
+  padding: 20px;
+  width: 690px;
+  background-color: #153638;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 140%;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.closebtn:hover {
+  color: black;
+}

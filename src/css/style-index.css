@@ -1,0 +1,223 @@
+h1.head {
+    text-align: center;
+    font-size: 190%;
+    color: #234243;
+    text-decoration: underline;
+}
+
+@media (min-width: 1000px) {
+    h1.head {
+        text-align: center;
+        font-size: 320%;
+        color: #234243
+    }
+}
+
+
+li:hover {
+    filter: blur(1px);
+    transition: 0.9s;
+}
+
+div.actions {
+    text-align: center;
+    height: 220px;
+    width: 760px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: #818fb8;
+    transition: 2s;
+}
+@media (min-width: 1000px) {
+    div.actions {
+        text-align: center;
+        height: 250px;
+        width: 900px;
+        border: 2px solid grey;
+        border-radius: 20px;
+        background-color: #818fb8;
+        transition: 2s;
+    }
+}
+@media (min-width: 1000px) {
+    div.actions:hover {
+        background-color: #adbded;
+        border-radius: 50px;
+        width: 1000px;
+        transition: 0.6s;
+        border: 2px solid black;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.618), 0 12px 30px 0 rgba(0, 0, 0, 0.572);
+    }
+}
+
+
+div.widgets {visibility: hidden;/*
+    text-align: center;
+    height: 210px;
+    width: 820px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    background-color: #818fb8;*/
+}
+@media (min-width: 1000px) {
+    div.widgets {
+        visibility: visible;
+        text-align: center;
+        height: 260px;
+        width: 900px;
+        border: 2px solid grey;
+        border-radius: 20px;
+        background-color: #818fb8;
+        transition: 2s;
+    }
+}
+@media (min-width: 1000px) {
+    div.widgets:hover {
+        background-color: #5b6b9a;
+        border-radius: 50px;
+        width: 1000px;
+        transition: 0.6s;
+        border: 2px solid black;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.618), 0 12px 30px 0 rgba(0, 0, 0, 0.572);
+    }
+}
+
+
+@media (min-width: 1000px) {}
+
+
+
+
+img.image:hover {
+    box-shadow: 0 4px 8px 0 rgb(38, 150, 160), 0 12px 30px 0 rgba(65, 102, 147, 0.953);
+    transition: 0.4s;
+}
+
+@media (min-width: 1000px) {
+    img.image:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.618), 0 12px 30px 0 rgba(0, 0, 0, 0.572);
+        transition: 0.3s;
+        border: 2px solid rgb(182, 182, 182);
+    }
+}
+
+img.image {
+    height: 110px;
+    width: 160px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+@media (min-width: 1000px) {
+    img.image {
+        height: 150px;
+        width: 230px;
+        border-radius: 20px;
+        border: 2px solid black;
+        transition: 1s;
+    }
+}
+
+
+p.pictxtB {
+    visibility: hidden;
+}
+
+@media (min-width: 1000px) {
+    p.pictxtB {
+        visibility: visible;
+    }
+}
+
+
+p.pictxtS {
+    visibility: visible;
+}
+
+@media (min-width: 1000px) {
+    p.pictxtS {
+        visibility: hidden;
+    }
+}
+
+
+div.msg {
+    visibility: hidden;
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+}
+@media (min-width: 1000px) {
+    div.msg {
+        visibility: visible;
+        display: flex;
+        justify-content: right;
+        padding-right: 20px;
+    }
+}
+@media (min-width: 1000px) {
+    div.alert:hover {
+        width: 290px;
+        height: 40px;
+        transition: 0.5s;
+        border: 2px solid black;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.618), 0 12px 30px 0 rgba(0, 0, 0, 0.572);
+    }
+}
+
+.alert {
+    padding: 20px;
+    width: 510px;
+    background-color: #f44336;
+    color: white;
+    border: 2px solid darkred;
+    border-radius: 20px;
+    transition: 2s;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+a.msgTut {
+    color: blue;
+
+}
+
+a.logout {
+    transition: 1s;
+    text-decoration: none;
+}
+
+a.logout:hover {
+    color: white;
+    font-size: 150%;
+    transition: 0.9s;
+}
+
+a.version {
+    text-decoration: none;
+    color: lightslategrey;
+}
+
+a.widgetBtn {
+    color: #532ADB; 
+    text-decoration: none;
+    transition: 1s;
+}
+a.widgetBtn:hover {
+    transition: 0.8s;
+    color: #1d0e4e; 
+    text-decoration: underline;
+}

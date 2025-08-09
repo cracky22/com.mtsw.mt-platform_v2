@@ -1,0 +1,65 @@
+div.container {
+    font-size: 200%;
+}
+
+div.center {
+    text-align: center;
+}
+
+h1.head {
+    text-align: center;
+    color: dodgerblue;
+}
+
+a.backBtn {
+    text-decoration: none;
+    color: white;
+}
+
+a.backBtn:hover {
+    text-decoration: underline;
+}
+a.logout {
+    text-decoration: none;
+}
+
+a.logout:hover {
+    color: white;
+    font-size: 150%;
+    transition: 1.3s;
+}
+/*message*/
+div.msg {
+        display: flex;
+        justify-content: right;
+        padding-right: 20px;
+}
+.alert {
+  padding: 20px;
+  width: 850px;
+  background-color: #5e88cc;
+  color: black;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 140%;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+a.logout {
+    text-decoration: none;
+}
+
+a.logout:hover {
+    color: white;
+    font-size: 150%;
+}

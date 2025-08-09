@@ -1,0 +1,49 @@
+body {
+    background-color: #c6cceb;
+}
+h1.header {
+    text-align: center;
+    font-size: 210%;
+}
+
+h3.version {
+    text-align: center;
+    font-size: 140%;
+}
+h3.version:hover {
+    zoom: 30!important;
+}
+a.logout {
+    text-decoration: none;
+}
+
+a.logout:hover {
+    color: white;
+    font-size: 150%;
+}
+
+div.changes {
+    text-align: center;
+}
+fieldset.function {
+    text-align: center;
+}
+fieldsed.bugfix {
+    text-align: center;
+}
+div.li {
+    justify-content: center;
+    text-align: center;
+}
+li {
+    text-align: left;    
+}
+
+a.backBtn {
+	text-decoration: none;
+	color: white;
+}
+
+a.backBtn:hover {
+	text-decoration: underline;
+}

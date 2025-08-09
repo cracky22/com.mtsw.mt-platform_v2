@@ -1,0 +1,27 @@
+h1 {
+    color: DarkSlateGrey;
+    font-family: verdana;
+    font-size: 300%;
+    text-align: center;
+}
+
+p {
+    color: Grey;
+    font-family: serif;
+    font-size: 160%;
+    text-align: center;
+}
+
+.container {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

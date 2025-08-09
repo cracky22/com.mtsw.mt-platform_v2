@@ -1,0 +1,76 @@
+h4.header {
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+a.backBtn {
+	text-decoration: none;
+	color: white;
+}
+
+a.backBtn:hover {
+	text-decoration: underline;
+}
+
+a.underLine {
+	text-decoration: none;
+}
+
+img.PDFimg {
+	height: 60px;
+	width: 45px;
+	padding-left: 70px;
+	padding-top: 15px;
+}
+
+img.PDFimg:hover {
+	filter: blur(8px);
+}
+a.logout {
+    text-decoration: none;
+}
+
+a.logout:hover {
+    color: white;
+    font-size: 150%;
+    transition: 0.9s;
+}
+div.hidden {
+	visibility: hidden;
+}
+/*message*/
+div.msg {
+        display: flex;
+        justify-content: right;
+        padding-right: 20px;
+}
+.alert {
+  padding: 20px;
+  width: 810px;
+  background-color: #7b6fbf;
+  color: black;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 140%;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+a.logout {
+    text-decoration: none;
+}
+
+a.logout:hover {
+    color: white;
+    font-size: 150%;
+}

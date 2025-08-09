@@ -1,0 +1,23 @@
+a.MTHead {
+    color: white;
+    text-decoration: none;
+}
+
+a.MTHead:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    font-size: 190%;
+    text-decoration: underline;
+}
+
+h3 {
+    text-align: center;
+    font-size: 120%;
+}
+
+input {
+    text-align: center;
+}
